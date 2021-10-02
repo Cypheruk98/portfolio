@@ -1,0 +1,64 @@
+/* Master Styles */
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 100% of the screen split into columns*/
+}
+
+/* Nav Styles */
+.nav_wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.left_side {
+    display: flex;
+    
+}
+
+
+.nav_wrapper > .left_side > div {
+    margin-right: 20px;
+    font-size: 90% ;
+    text-transform:uppercase;
+}
+
+
+.nav_link_wrapper {
+    height: 22px;
+    border-bottom:1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+
+.nav_link_wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+
+.nav_link_wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+
+.nav_link_wrapper a:hover {
+    color: black;
+
+
+/* Master Styles */
+
+
+
+
+
+
+
