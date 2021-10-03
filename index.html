@@ -12,7 +12,7 @@
         <div class="nav_wrapper">
             <div class="left_side">
                 
-                <div class="nav_link_wrapper">
+                <div class="nav_link_wrapper active_nav_link">
                     <a href="index.html">Home</a>
                 </div>
                 
@@ -32,27 +32,168 @@
             <div class="portfolio_items_wrapper">
             
                 <div class="portfolio_item_wrapper">
-                    <div class="portfolio_img_background" style= "background-image:url(images);"> </div>
+                    <div class="portfolio_img_background" style= "background-image:url(images/waa1.jpg);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subtitle">
+                        I built a website for a short film production company.
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/kanga.jpg);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subtitle">
+                        KangaKourt: I created a wacky text-based python game.
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
+                </div>
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_img_background" style= "background-image:url(images/carbon2.png);">
+                    </div> 
+                    <div class="img_text_wrapper">
+                        <div class="logo_wrapper">
+                            <img src="" alt="Mini projects">
+                        </div>
+                        <div class="subtitle">
+                        A collection of short projects used to improve Python skills.
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
-        
-        
-        
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-        
-    
     </div>
 </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio_item_wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image_blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image_blur');
+        });
+    });
+</script>
 </html>
