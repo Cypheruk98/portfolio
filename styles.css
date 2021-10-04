@@ -109,7 +109,7 @@ body {
 
 .img_text_wrapper:hover .subtitle {
     font-weight: 600;
-    color: lightseagreen;
+    color: springgreen  ;
 }
 
 .img_darken {
@@ -128,7 +128,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.profile_image_wrapper img {
+.skills_image_wrapper img {
     width: 100%;
 }
 
